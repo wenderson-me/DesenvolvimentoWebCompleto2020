@@ -1,0 +1,36 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url(./assets/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li {
+    float: left;
+}
+
+ul a {
+    text-decoration: none;
+    display: block;
+    padding: 0 2em;
+    line-height: 2.2em;
+    color: white;
+    background: url(./assets/divisor.png) repeat-y;
+}
+
+ul .primeiro a {
+    background: none;
+}
+
+ul a:hover {
+    background: #44cade;
+    color: #085662;
+}
+
+#home .home a,
+#sobre .sobre a {
+    background: #44cade;
+    color: #085662;
+}

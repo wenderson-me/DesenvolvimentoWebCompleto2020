@@ -1,0 +1,46 @@
+/**************************
+Lista de navegação
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    padding: 10px 20px;
+    background: url(./assets/seta.png) no-repeat left center;
+}
+
+*/
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+ul a {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-indent: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    background: #f7b600 url(./assets/menu.png) no-repeat left bottom;
+}
+
+a:hover {
+    background-position: right bottom;
+    background-color: #f99600;
+    color: white;
+}
+
+#home .home a,
+#sobre .sobre a {
+    background-position: right bottom;
+    background-color: #f99600;
+    color: white;
+}

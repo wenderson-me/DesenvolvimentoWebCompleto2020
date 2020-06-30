@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Flutuante Pratica</title>
+
+    <style type="text/css">
+        body {
+            background: #f4f4f4;
+        }
+        
+        .principal {
+            width: 920px;
+        }
+        
+        .noticia {
+            background: #e5e5e5;
+            padding: 5px;
+            width: 280px;
+            margin: 7px;
+            float: left;
+            text-decoration: none;
+        }
+        
+        .clear {
+            clear: both;
+        }
+        
+        .fotos {
+            background: white;
+            width: 280px;
+            padding: 5px;
+            margin: 7px;
+            float: left;
+        }
+        /* 
+            **** Posicionamento 
+            */
+        
+        .posicionamento-body {
+            background-color: #007fc7;
+        }
+        
+        .container {
+            background: #fff;
+            margin: 10px auto;
+            position: relative;
+        }
+        
+        h1 {
+            position: relative;
+        }
+        
+        p {
+            width: 300px;
+        }
+        
+        .relative {
+            /* manipulado de acordo com a sua posição inicial */
+            border: 1px solid red;
+            position: relative;
+        }
+        
+        .absolute {
+            /* manipulado se o bloco onde ele pertence tiver uma position, caso contratio será de acordo com o body*/
+            position: absolute;
+            border-top: 1px solid red;
+            top: 80px;
+            right: 80px;
+        }
+        
+        .fixed {
+            /* manipulado para fixar fixo em uma posição, se tiver scroll a pagina vai se movimentar mas ele ficara sobrepondo os outro conteudos */
+            border: 1px solid red;
+            position: fixed;
+        }
+        /* 
+            **** Sobrepondo
+            */
+        
+        .cont1 {
+            border: 1px solid red;
+            background: orange;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+        }
+        
+        .cont2 {
+            border: 1px solid red;
+            background: green;
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            top: 80px;
+            right: 80px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="principal">
+
+        <div>
+
+            <div class="noticia">
+                <h2>Lorem Ipsum is simply</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <a href="">Veja mais...</a>
+            </div>
+
+            <div class="noticia">
+                <h2>Lorem Ipsum is simply</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <a href="">Veja mais...</a>
+            </div>
+
+            <div class="noticia">
+                <h2>Lorem Ipsum is simply</h2>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                </p>
+                <a href="">Veja mais...</a>
+            </div>
+        </div>
+
+        <div class="clear"></div>
+
+        <div>
+            <div class="fotos">
+                <img style="text-align: center;" src="https://m.media-amazon.com/images/G/01/img17/prime/tablet/PMP_DashCard_SameDayShipping._CB464298138_.jpg" alt="">
+                <p>Lorem</p>
+            </div>
+            <div class="fotos">
+                <img src="https://m.media-amazon.com/images/G/01/img17/prime/tablet/PMP_DashCard_SameDayShipping._CB464298138_.jpg" alt="">
+                <p>Lorem</p>
+            </div>
+            <div class="fotos">
+                <img src="https://m.media-amazon.com/images/G/01/img17/prime/tablet/PMP_DashCard_SameDayShipping._CB464298138_.jpg" alt="">
+                <p>Lorem</p>
+            </div>
+        </div>
+
+
+        <hr class="clear">
+
+        <h1>Inline, block e inline-block</h1>
+        <br><br><br>
+
+        <h3 style="display: block; border: 1px solid red;">Block 1</h3>
+        <h3 style="display: block; border: 1px solid red;">Block 1</h3>
+
+        <p style="display: inline; border: 1px solid red;">Inline</p>
+        <p style="display: inline; border: 1px solid red;">Inline</p>
+
+        <span style="display: inline-block; border: 1px solid red;">Inline</span>
+
+        <hr class="clear">
+
+        <h1>Posicionamento estatico, relativo</h1>
+        <br><br><br>
+
+
+
+        <div class="posicionamento-body">
+            <div class="container">
+                <h1>Posição</h1>
+                <p class="fixed">P1 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p class="relative"> P2 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p class="absolute">P3 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p>P1 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p>P1 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p>P1 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p>P1 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+                <p>P1 vnjkdnsvjndsjvnjdsnvjkndsjkvnjkdsnvnds vdsvndsnvklndsklvndsklnvkldnsvklndkslnvk vdsnvkndskvndklsnvkldnsvklndsnvldnsvnkldsn vkdsnvlkdsnvndsknvkldsnvklndskvndkslnvkndskl
+                </p>
+
+            </div>
+
+        </div>
+
+        <hr class="clear">
+
+        <h1>Sobrepondo elementos</h1>
+
+        <div class="cont1">
+            conteudo 1
+        </div>
+
+        <div class="cont2">
+            conteudo 2
+        </div>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+/********************************************
+SELETOR UNIVERSAL
+
+
+* {
+    border: 1px solid red;
+}
+
+*/
+
+
+/********************************************
+SELETOR TEXTO
+
+
+h1 {
+    color: seagreen;
+}
+*/
+
+
+/********************************************
+SELETOR CLASSE
+
+.verde {
+    color: green;
+}
+
+p.verde {
+    color: green;
+}
+
+#main {
+    border: 2px solid gray;
+    width: 400px;
+    padding: 10px 12px;
+}
+*/
+
+
+/********************************************
+SELETOR FILHOS  x
+
+li>a {
+    color: red;
+    text-decoration: none;
+    list-style: none;
+}
+*/
+
+
+/********************************************
+SELETOR DESCONHECIDO  */
