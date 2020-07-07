@@ -30,6 +30,16 @@ body {
 /* Barra de navegação
 */
 
+a:link,
+a:visited {
+    color: #b10333;
+    padding: 2px;
+}
+
+a:hover {
+    color: #e50040;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -175,7 +185,15 @@ input {
     width: 150px;
     padding: 5px;
     font-size: 0.9em;
+    border: none;
+    border-bottom: 2px solid #b10333;
     background-color: #fff;
+    outline: none;
+}
+
+input[type="email"]:focus {
+    border-radius: 3px;
+    border: 2px solid #b10333;
 }
 
 input.submit {
@@ -183,7 +201,6 @@ input.submit {
     margin-left: 4px;
     color: #fff;
     background-color: #b10333;
-    border: 2px solid #69001d;
     transition: 0.3s;
 }
 
@@ -218,6 +235,41 @@ h3 {
 }
 
 
+/* Lista de noticias
+*/
+
+#lista-noticia li {
+    padding: 2px;
+    border-bottom: 1px solid #ccc;
+    height: 62px;
+}
+
+#lista-noticia li a img {
+    float: left;
+    margin: 5px;
+}
+
+#lista-noticia li a {
+    text-decoration: none;
+}
+
+#lista-noticia li a h3 {
+    font-size: 0.8em;
+    padding: 0;
+    color: #3e7ab9;
+}
+
+#lista-noticia li a p {
+    font-size: 0.7em;
+    color: black;
+}
+
+#lista-noticia li:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+
 /* Rodape
 */
 
@@ -227,6 +279,7 @@ h3 {
 }
 
 .rodape {
+    text-align: center;
     width: 750px;
     margin: 0 auto;
     color: #fff;
