@@ -138,7 +138,7 @@ ul.navegacao a:hover {
 .area-lateral {
     float: right;
     width: 50%;
-    background: url(./assets/bg-area-lateral.png) top right repeat-x;
+    background: url(./assets/bg-area-lateral.png) top left repeat-x;
     padding: 20px 0;
 }
 
@@ -147,4 +147,54 @@ ul.navegacao a:hover {
     width: 90%;
 }
 
-.rodape {}
+.conteudo-lateral li {
+    padding: 10px;
+    border-bottom: 1px solid #fdf6be;
+}
+
+.conteudo-lateral li a img {
+    margin-right: 8px;
+    float: left;
+}
+
+.conteudo-lateral li a p {
+    font-size: 1em;
+    color: #000;
+}
+
+.conteudo-lateral li a h3 {
+    color: #b15b2d;
+    padding: 5px 0;
+    background: url(./assets/ornamento.png) no-repeat center right;
+}
+
+.conteudo-lateral li:hover {
+    background: #f6f3d6;
+    cursor: pointer;
+}
+
+
+/* Formatação de texto
+*/
+
+h2 {
+    color: #a29750;
+    padding: 5px 0px;
+    line-height: 1.1em;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+/* Rodape
+*/
+
+.rodape {
+    font-size: 0.8em;
+    background: #fff url(./assets/bg-rodape.png) top repeat-x;
+    padding: 16px;
+    text-align: center;
+}
