@@ -1,0 +1,28 @@
+.caixa {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 25px;
+    box-sizing: border-box;
+    /* ao utilizar essa propriedade a caixa tera sempre o valor do width e height */
+    margin-bottom: 20px;
+    /*
+    -webkit-border-radius: 150px; 
+    formatação para essa propriedade ser usada em varios navegadores
+    */
+}
+
+.arredondamento {
+    margin-top: 20px;
+    border-radius: 150px;
+}
+
+.caixa2 {
+    width: 300px;
+    height: 300px;
+    background: #b9c941;
+    padding: 10px;
+    /*
+    -webkit-border-radius: 150px;
+    */
+}
